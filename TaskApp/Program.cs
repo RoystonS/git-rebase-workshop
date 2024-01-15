@@ -15,7 +15,7 @@ var tasks = new List<string>
 Console.WriteLine("Enter filter:");
 var filter = Console.ReadLine();
 
-var filtered = tasks.Where(t => t.Contains(filter)).ToList();
+var filtered = tasks.Where(t => t.ToLower().Contains(filter.ToLower())).ToList();
 
 Console.WriteLine("Tasks:");
 foreach (var task in filtered)
