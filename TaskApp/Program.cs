@@ -10,7 +10,7 @@ bool Matches(string task, string filter)
     return task.ToLower().Contains(filter.ToLower());
 }
 
-var tasks = new List<string>
+var taskList = new List<string>
 {
     "Buy milk",
     "Write report",
@@ -26,17 +26,17 @@ var logger = new LoggerConfiguration()
 Console.WriteLine("Enter filter:");
 var filter = Console.ReadLine() ?? "";
 
-var filtered = tasks.Where(t => Matches(t, filter)).ToList();
+var filtered = taskList.Where(t => Matches(t, filter)).ToList();
 
 logger.Information("Generating tasklist");
 
-Console.WriteLine("Tasks:");
+Console.WriteLine("taskList:");
 foreach (var task in filtered)
 {
     Console.WriteLine("- " + task);
 }
 
-// TODO: exclude completed tasks
+// TODO: exclude completed taskList
 
 
 Console.WriteLine("DEBUG: filter=" + filter);
