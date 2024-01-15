@@ -39,3 +39,4 @@ foreach (var task in filtered)
 // TODO: exclude completed tasks
 
 
+Console.WriteLine("DEBUG: filter=" + filter);
