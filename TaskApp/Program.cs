@@ -36,3 +36,4 @@ foreach (var task in filtered)
     Console.WriteLine(task);
 }
 
+// TODO: exclude completed tasks
