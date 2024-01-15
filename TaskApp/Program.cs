@@ -10,8 +10,13 @@ var tasks = new List<string>
     "Fix bug"
 };
 
+Console.WriteLine("Enter filter:");
+var filter = Console.ReadLine();
+
+var filtered = tasks.Where(t => t.Contains(filter)).ToList();
+
 Console.WriteLine("Tasks:");
-foreach (var task in tasks)
+foreach (var task in filtered)
 {
     Console.WriteLine(task);
 }
