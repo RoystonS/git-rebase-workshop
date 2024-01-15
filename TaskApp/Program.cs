@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+Console.WriteLine("DEBUG: starting app");
+
 var tasks = new List<string>
 {
     "Buy milk",
