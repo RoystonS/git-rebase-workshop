@@ -31,9 +31,9 @@ var filtered = taskList.Where(t => Matches(t, filter)).ToList();
 logger.Information("Generating tasklist");
 
 Console.WriteLine("taskList:");
-foreach (var task in filtered)
+int i=1; foreach (var task in filtered)
 {
-    Console.WriteLine("- " + task);
+    Console.WriteLine($" { i++ }. { task }");
 }
 
 // TODO: exclude completed taskList
@@ -41,3 +41,4 @@ foreach (var task in filtered)
 
 Console.WriteLine("DEBUG: filter=" + filter);
 // small tweak
+
