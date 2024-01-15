@@ -24,7 +24,7 @@ var logger = new LoggerConfiguration()
     .CreateLogger();
 
 Console.WriteLine("Enter filter:");
-var filter = Console.ReadLine();
+var filter = Console.ReadLine() ?? "";
 
 var filtered = tasks.Where(t => Matches(t, filter)).ToList();
 
@@ -37,4 +37,5 @@ foreach (var task in filtered)
 }
 
 // TODO: exclude completed tasks
+
 

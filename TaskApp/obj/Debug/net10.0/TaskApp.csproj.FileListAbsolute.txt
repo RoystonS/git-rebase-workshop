@@ -12,3 +12,7 @@
 /home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/obj/Debug/net10.0/TaskApp.pdb
 /home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/obj/Debug/net10.0/TaskApp.genruntimeconfig.cache
 /home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/obj/Debug/net10.0/ref/TaskApp.dll
+/home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/bin/Debug/net10.0/Serilog.dll
+/home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/bin/Debug/net10.0/Serilog.Sinks.Console.dll
+/home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/obj/Debug/net10.0/TaskApp.csproj.AssemblyReference.cache
+/home/runner/work/git-rebase-workshop-src/git-rebase-workshop-src/output/repo/TaskApp/obj/Debug/net10.0/TaskApp.csproj.Up2Date
