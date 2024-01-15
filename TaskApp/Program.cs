@@ -1,8 +1,14 @@
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 Console.WriteLine("DEBUG: starting app");
+
+bool Matches(string task, string filter)
+{
+    return task.ToLower().Contains(filter.ToLower());
+}
 
 var tasks = new List<string>
 {
@@ -12,10 +18,17 @@ var tasks = new List<string>
     "Fix bug"
 };
 
+var logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .CreateLogger();
+
 Console.WriteLine("Enter filter:");
 var filter = Console.ReadLine();
 
-var filtered = tasks.Where(t => t.ToLower().Contains(filter.ToLower())).ToList();
+var filtered = tasks.Where(t => t.Contains(filter)).ToList();
+
+logger.Information("Generating tasklist");
 
 Console.WriteLine("Tasks:");
 foreach (var task in filtered)
