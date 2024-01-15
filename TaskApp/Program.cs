@@ -33,7 +33,8 @@ logger.Information("Generating tasklist");
 Console.WriteLine("Tasks:");
 foreach (var task in filtered)
 {
-    Console.WriteLine(task);
+    Console.WriteLine("- " + task);
 }
 
 // TODO: exclude completed tasks
+
