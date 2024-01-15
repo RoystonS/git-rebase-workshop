@@ -9,6 +9,7 @@ A .NET solution repository containing demonstration console applications for lea
 ## Getting Started
 
 1. Open the solution in Visual Studio, VS Code, or your preferred .NET IDE.
-2. Build the solution: \dottnet build\
+2. Build the solution: \dotnet build\
 3. Navigate to a project directory and run: \dotnet run\
+
 
