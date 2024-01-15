@@ -26,7 +26,7 @@ var logger = new LoggerConfiguration()
 Console.WriteLine("Enter filter:");
 var filter = Console.ReadLine();
 
-var filtered = tasks.Where(t => t.Contains(filter)).ToList();
+var filtered = tasks.Where(t => Matches(t, filter)).ToList();
 
 logger.Information("Generating tasklist");
 
@@ -35,3 +35,4 @@ foreach (var task in filtered)
 {
     Console.WriteLine(task);
 }
+
